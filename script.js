@@ -220,7 +220,7 @@ function parse(func) {
                             "Math.cos **(-1)":"Math.acos",
                             "Math.tan **(-1)":"Math.atan"})
 
-    func = func.replace(/(\)+)(\(+)/g, "$1*$2");
+    func = func.replace(/(\)+)([a-zA-Z]|\(+)/g, "$1*$2");
 
     return func;
 }
