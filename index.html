@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Three.js Graphing Calculator</title>
+        <link rel = "stylesheet" href = "style.css">
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.css"/>  -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.js"></script> -->
+	    <script src="https://unpkg.com/mathlive"></script>
+    </head>
+
+	<body>
+		<div class="navbar">
+            <p>3D Graphing Calculator</p>
+        </div>
+
+        <div class="sidenav" id="sidenav">
+            <div class="arrows-section">
+                <a href="#" class="left-arrow" onclick="windowToggle()"><i class="fas fa-angle-double-left"></i></i><a>
+                <a href="#" class="right-arrow" onclick="windowToggle()"><i class="fas fa-angle-double-right"></i></i><a>
+            </div>
+            
+            <div class="formula-section">
+                <math-field id="formula" virtual-keyboard-mode="manual">
+                    \sin(x)+\cos(y)
+                </math-field>
+                <!-- <textarea id="latex"></textarea> -->
+            </div>
+        </div>
+
+        <div class="canvas" id="canvas"></div>    
+
+		<script type="module" src="script.js"></script>
+	</body>
+</html>

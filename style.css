@@ -1,0 +1,139 @@
+body { 
+    margin: 0; 
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    height: 35px;
+    background-color: #1b1b1b;
+    font-size: 24px;
+    color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0.75%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* border-bottom: 5px solid rgba(20, 20, 20, 0.767); */
+}
+
+.main {
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.sidenav {
+    background-color:#161616;
+    color:#888;
+    border-top: 50px solid rgba(20, 20, 20, 0.767);
+    padding-left: 10px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+.sidenav-small {
+    width: 30px;
+}
+
+.sidenav-small .formula-section {
+    display: none;
+}
+
+.sidenav-small .left-arrow {
+    display: none;
+}
+
+.sidenav-small .right-arrow {
+    display: inline;
+}
+
+.arrows-section {
+    width: 100%;
+    padding-right: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: right;
+}
+
+.left-arrow {
+    font-size: 30px;
+    color: #292828;
+    padding-right: 7px;
+    border-radius: 5px;
+    /* border: 1px solid black;
+    border-radius: 5px; */
+}
+
+.left-arrow:hover {
+    background-color: rgb(19, 19, 19);
+}
+
+.right-arrow {
+    font-size: 30px;
+    color: #778899;
+    padding-right: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: none;
+}
+
+.formula-section {
+    margin-top: 100px;
+}
+
+.canvas {
+    margin-left: 20%;
+    height:100vh;
+}
+
+.canvas-large {
+    margin-left: 30px;
+    /* transition: all 1s; */
+}
+
+#fm {
+    width: 300px;
+    font-size: 1em;
+    padding: .2em;
+    margin: 5px 5px 5px 0;
+    border-radius: 5px;
+    background-color: #fff;
+    outline: none;
+    border-color: #778899;
+}
+button {
+    width: 10em;
+    padding: 3px;
+    background: lightslategray;
+    color: white;
+    border-radius: 5px;
+    border-color: navy;
+}
+
+button:hover {
+    background: lightsteelblue;
+}
+
+#formula {
+    font-size: 20px; 
+    margin: 0.5em;
+    padding: 8px; 
+    border-radius: 8px;
+    border: 1px solid rgba(88, 88, 88, 0.212); 
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.486);
+    background-color: rgb(12, 12, 12);
+}
+
+#formula:focus-within {
+    outline: 2px solid #03030348;
+}
